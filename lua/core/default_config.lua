@@ -48,9 +48,8 @@ M.ui = {
 
   -- nvdash (dashboard)
   nvdash = {
-    load_on_startup = false,
-
-    header = {
+    load_on_startup = true,
+    header = { -- use ▄ and █ to draw picture.
       "           ▄ ▄                   ",
       "       ▄   ▄▄▄     ▄ ▄▄▄ ▄ ▄     ",
       "       █ ▄ █▄█ ▄▄▄ █ █▄█ █ █     ",
