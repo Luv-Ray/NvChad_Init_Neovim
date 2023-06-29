@@ -23,6 +23,10 @@
 
   </div>
 
+## Ray
+install: git clone https://github.com/Luv-Ray/NvChad_Init_Neovim.git ~/.config/nvim --depth 1 && nvim
+if warning: *clipboard: No provider.*, install *xclip*.
+
 ## Showcase
 
 <img src="https://nvchad.com/features/nvdash.webp">
