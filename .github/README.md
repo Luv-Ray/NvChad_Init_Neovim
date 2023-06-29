@@ -24,8 +24,8 @@
   </div>
 
 ## Ray
-- install: run *git clone https://github.com/Luv-Ray/NvChad_Init_Neovim.git ~/.config/nvim --depth 1 && nvim*
-- if warning: *clipboard: No provider.*, install *xclip* as clipboard tool.
+- install: run `git clone https://github.com/Luv-Ray/NvChad_Init_Neovim.git ~/.config/nvim --depth 1 && nvim`
+- if warning: `clipboard: No provider.`, install `xclip` as clipboard tool.
 - [more details](https://nvchad.com/docs/quickstart/install)
 
 ## Showcase
