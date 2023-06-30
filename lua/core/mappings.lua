@@ -23,6 +23,10 @@ M.general = {
     ["<C-j>"] = { "<C-w>j", "Window down" },
     ["<C-k>"] = { "<C-w>k", "Window up" },
 
+    -- switch between buffers
+    ["H"] = { "<cmd> bprevious <CR>" },
+    ["L"] = { "<cmd> bnext <CR>" },
+
     -- save
     ["<C-s>"] = { "<cmd> w <CR>", "Save file" },
 
@@ -61,6 +65,9 @@ M.general = {
   v = {
     ["<Up>"] = { 'v:count || mode(1)[0:1] == "no" ? "k" : "gk"', "Move up", opts = { expr = true } },
     ["<Down>"] = { 'v:count || mode(1)[0:1] == "no" ? "j" : "gj"', "Move down", opts = { expr = true } },
+    -- move lines
+    ["J"] = { ":m '>+1<CR>gv=gv", "Move up"},
+    ["K"] = { ":m '<-2<CR>gv=gv", "Move down"},
   },
 
   x = {

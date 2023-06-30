@@ -14,6 +14,7 @@ opt.showmode = false
 
 opt.clipboard = 'unnamedplus'
 opt.cursorline = true
+opt.wrap = false
 
 -- Indenting
 opt.expandtab = true
@@ -21,6 +22,7 @@ opt.shiftwidth = 4
 opt.smartindent = true
 opt.tabstop = 4
 opt.softtabstop = 4
+opt.scrolloff = 3
 
 opt.fillchars = { eob = " " }
 opt.ignorecase = true
