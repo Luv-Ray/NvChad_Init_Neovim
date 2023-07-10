@@ -3,18 +3,6 @@
 local M = {}
 
 M.general = {
-  i = {
-    -- go to  beginning and end
-    ["<C-b>"] = { "<ESC>^i", "Beginning of line" },
-    ["<C-e>"] = { "<End>", "End of line" },
-
-    -- navigate within insert mode
-    ["<C-h>"] = { "<Left>", "Move left" },
-    ["<C-l>"] = { "<Right>", "Move right" },
-    ["<C-j>"] = { "<Down>", "Move down" },
-    ["<C-k>"] = { "<Up>", "Move up" },
-  },
-
   n = {
     ["<Esc>"] = { ":noh <CR>", "Clear highlights" },
     -- switch between windows
@@ -23,10 +11,6 @@ M.general = {
     ["<C-j>"] = { "<C-w>j", "Window down" },
     ["<C-k>"] = { "<C-w>k", "Window up" },
 
-    -- switch between buffers
-    ["H"] = { "<cmd> bprevious <CR>" },
-    ["L"] = { "<cmd> bnext <CR>" },
-
     -- save
     ["<C-s>"] = { "<cmd> w <CR>", "Save file" },
 
@@ -34,8 +18,7 @@ M.general = {
     ["<C-c>"] = { "<cmd> %y+ <CR>", "Copy whole file" },
 
     -- line numbers
-    ["<leader>n"] = { "<cmd> set nu! <CR>", "Toggle line number" },
-    ["<leader>rn"] = { "<cmd> set rnu! <CR>", "Toggle relative number" },
+    ["<leader>n"] = { "<cmd> set rnu! <CR>", "Toggle relative number" },
 
     -- Allow moving the cursor through wrapped lines with j, k, <Up> and <Down>
     -- http://www.reddit.com/r/vim/comments/2k4cbr/problem_with_gj_and_gk/
